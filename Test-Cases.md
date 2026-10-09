@@ -15,7 +15,6 @@
 **Expected Result:**
 The user should be successfully logged in and redirected to the homepage.
 
-//Second Test Case TC-002
 ## TC-002 – Invalid Password
 
 **Test Objective:** Verify that a user cannot log in with an incorrect password.
@@ -31,4 +30,20 @@ The user should be successfully logged in and redirected to the homepage.
 
 **Expected Result:**
 The user should not be logged in. An appropriate error message should be displayed.
+
+## TC-003 – Invalid Email Format
+
+**Test Objective:** Verify that the login form handles an incorrectly formatted email address.
+
+**Precondition:** The login page is open.
+
+**Test Steps:**
+
+1. Enter an invalid email address, for example `user@`.
+2. Enter any password.
+3. Click the Login button.
+
+**Expected Result:**
+The application should reject the invalid email address and display an appropriate validation message.
+
 
